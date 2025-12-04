@@ -25,6 +25,7 @@ body {
   align-items: center;
   overflow-x: hidden;
   position: relative;
+  padding: 10px;
 }
 
 body::before {
@@ -71,6 +72,7 @@ body::before {
   animation: float 3s ease-in-out infinite;
   position: relative;
   z-index: 10;
+  margin: 20px auto;
 }
 
 @keyframes float {
@@ -503,45 +505,52 @@ body::before {
 
 @media (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: 5px;
   }
 
   .container {
-    padding: 20px;
-    width: 100%;
-    max-width: 100%;
+    padding: 15px;
+    width: 95%;
     border-width: 5px;
+    margin: 10px auto;
   }
 
   .title {
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 10px;
   }
 
   .subtitle {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
   }
 
   .form-label {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 8px;
   }
 
   .form-input {
-    padding: 12px;
+    padding: 10px;
     font-size: 16px;
     border-width: 3px;
   }
 
   .button-group {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    margin-top: 20px;
   }
 
   .btn {
-    padding: 15px 30px;
-    font-size: 20px;
+    padding: 15px 25px;
+    font-size: 18px;
     width: 100%;
+    border-width: 3px;
   }
 
   .btn-yes::before,
@@ -551,71 +560,196 @@ body::before {
 
   .rsvp-lists {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    margin-top: 15px;
   }
 
-  .rsvp-list-title {
-    font-size: 22px;
-  }
-
-  .rsvp-item {
-    font-size: 16px;
-    padding: 8px 12px;
-  }
-
-  .success-title {
-    font-size: 28px;
-  }
-
-  .success-text {
-    font-size: 18px;
-  }
-
-  .marquee-content {
-    font-size: 16px;
-  }
-
-  .container::before,
-  .container::after {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 24px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-  }
-
-  .form-label {
-    font-size: 16px;
-  }
-
-  .btn {
-    font-size: 18px;
-    padding: 12px 20px;
+  .rsvp-column {
+    padding: 15px;
+    border-width: 3px;
   }
 
   .rsvp-list-title {
     font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .rsvp-item {
     font-size: 14px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    border-width: 2px;
+  }
+
+  .success-message {
+    padding: 15px;
+    border-width: 3px;
   }
 
   .success-title {
     font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .success-text {
     font-size: 16px;
   }
 
+  .marquee {
+    padding: 8px;
+    margin-top: 15px;
+    border-width: 2px;
+  }
+
   .marquee-content {
     font-size: 14px;
+  }
+
+  .container::before,
+  .container::after {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 3px;
+  }
+
+  .container {
+    padding: 12px;
+    width: 98%;
+    border-width: 4px;
+    margin: 5px auto;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .title .emoji {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .form-input {
+    padding: 8px;
+    font-size: 14px;
+    border-width: 2px;
+    box-shadow: 3px 3px 0 #ffd700;
+  }
+
+  .button-group {
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    border-width: 2px;
+    box-shadow: 3px 3px 0 #000;
+  }
+
+  .rsvp-lists {
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .rsvp-column {
+    padding: 10px;
+    border-width: 2px;
+  }
+
+  .rsvp-list-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .rsvp-item {
+    font-size: 13px;
+    padding: 6px 8px;
+    margin-bottom: 6px;
+    border-width: 2px;
+    box-shadow: 2px 2px 0 #000;
+  }
+
+  .success-message {
+    padding: 12px;
+    border-width: 2px;
+  }
+
+  .success-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .success-text {
+    font-size: 14px;
+  }
+
+  .marquee {
+    padding: 6px;
+    margin-top: 10px;
+    border-width: 2px;
+  }
+
+  .marquee-content {
+    font-size: 12px;
+  }
+
+  .container::before,
+  .container::after {
+    font-size: 25px;
+  }
+
+  body::before {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 10px;
+    width: 99%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .form-label {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+
+  .rsvp-list-title {
+    font-size: 16px;
+  }
+
+  .rsvp-item {
+    font-size: 12px;
   }
 }
