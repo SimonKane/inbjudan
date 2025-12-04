@@ -502,7 +502,120 @@ body::before {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    border-width: 5px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    font-size: 18px;
+  }
+
+  .form-input {
+    padding: 12px;
+    font-size: 16px;
+    border-width: 3px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .btn-yes::before,
+  .btn-no::after {
+    display: none;
+  }
+
   .rsvp-lists {
     flex-direction: column;
+    gap: 15px;
+  }
+
+  .rsvp-list-title {
+    font-size: 22px;
+  }
+
+  .rsvp-item {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .success-title {
+    font-size: 28px;
+  }
+
+  .success-text {
+    font-size: 18px;
+  }
+
+  .marquee-content {
+    font-size: 16px;
+  }
+
+  .container::before,
+  .container::after {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .form-label {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+
+  .rsvp-list-title {
+    font-size: 20px;
+  }
+
+  .rsvp-item {
+    font-size: 14px;
+  }
+
+  .success-title {
+    font-size: 24px;
+  }
+
+  .success-text {
+    font-size: 16px;
+  }
+
+  .marquee-content {
+    font-size: 14px;
   }
 }
